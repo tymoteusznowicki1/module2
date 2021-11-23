@@ -17,7 +17,7 @@ local DaHoodSettings = {
     SilentAim = true,
     AimLock = true,
     Prediction = 0.165,
-    AimLockKeybind = Enum.KeyCode.RightShift
+    AimLockKeybind = Enum.KeyCode.Q
 }
 getgenv().DaHoodSettings = DaHoodSettings
 

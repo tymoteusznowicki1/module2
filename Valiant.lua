@@ -1,5 +1,5 @@
 -- // Dependencies
-local Aiming = loadstring(game:HttpGet(""))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/ValiantGitos/Valiant-Silent-Aim-Module/main/AimHook.lua"))()
 Aiming.TeamCheck(false)
 
 -- // Services

@@ -69,13 +69,6 @@ getgenv().Aiming = {
 local Aiming = getgenv().Aiming
 
 
-local CPlayer = Aiming.Selected
-local hrp = CPlayer.Character.HumanoidRootPart
-                hrp.Velocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Y, hrp.Velocity.Z)    
-                hrp.AssemblyLinearVelocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Y, hrp.Velocity.Z)
-                
-
-
 
 -- // Create circle
 local circle = Drawingnew("Circle")
@@ -315,6 +308,12 @@ function Aiming.CheckHealth(Player)
     -- //
     return Health > 0
 end
+
+local CPlayer = Aiming.Selected
+local hrp = CPlayer.Character.HumanoidRootPart
+                hrp.Velocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Y, hrp.Velocity.Z)    
+                hrp.AssemblyLinearVelocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Y, hrp.Velocity.Z)
+
 
 -- // Check if silent aim can used
 function Aiming.Check()
